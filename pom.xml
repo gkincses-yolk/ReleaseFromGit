@@ -39,12 +39,37 @@
         </dependency>
     </dependencies>
 
+    <distributionManagement>
+        <repository>
+            <id>digital.yolk.release-from-git</id>
+            <url>file://repository</url>
+        </repository>
+    </distributionManagement>
+
+    <scm>
+        <connection>scm:git:https://github.com/gkincses-yolk/ReleaseFromGit.git</connection>
+        <developerConnection>scm:git:ssh://git@github.com:gkincses-yolk/ReleaseFromGit.git</developerConnection>
+        <tag>HEAD</tag>
+    </scm>
+
     <build>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-release-plugin</artifactId>
                 <version>3.0.0-M4</version>
+                <dependencies>
+                    <dependency>
+                        <groupId>org.apache.maven.scm</groupId>
+                        <artifactId>maven-scm-provider-gitexe</artifactId>
+                        <version>1.12.0</version>
+                    </dependency>
+                </dependencies>
+                <configuration>
+                    <branchName>develop</branchName>
+                    <pushChanges>false</pushChanges>
+                    <localCheckout>true</localCheckout>
+                </configuration>
             </plugin>
         </plugins>
     </build>
