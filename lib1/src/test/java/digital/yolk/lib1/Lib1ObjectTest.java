@@ -1,13 +1,20 @@
 package digital.yolk.lib1;
 
-import org.junit.jupiter.api.*;
+import org.junit.*;
+
+import java.io.IOException;
+
+import static org.junit.Assert.*;
 
 public class Lib1ObjectTest {
 
-	Lib1Object lib1Object = new Lib1Object();
+	Lib1Object o = new Lib1Object();
+
+	public Lib1ObjectTest() throws IOException {
+	}
 
 	@Test
 	public void testGetValue() {
-		Assertions.assertEquals("lib1-1.0-SNAPSHOT", lib1Object.getValue());
+		assertEquals(o.getArtifactId() + ":" + o.getVersion(), o.getValue());
 	}
 }
