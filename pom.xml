@@ -5,7 +5,7 @@
     <groupId>digital.yolk</groupId>
     <artifactId>release-from-git</artifactId>
     <packaging>pom</packaging>
-    <version>1.7-SNAPSHOT</version>
+    <version>1.7</version>
 
     <modules>
         <module>lib1</module>
@@ -45,7 +45,7 @@
     <scm>
         <connection>scm:git:foo</connection>
         <developerConnection>scm:git:bar</developerConnection>
-        <tag>HEAD</tag>
+        <tag>release-from-git-1.7</tag>
     </scm>
 
     <build>
