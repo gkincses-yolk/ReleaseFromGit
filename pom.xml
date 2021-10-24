@@ -43,8 +43,8 @@
     </distributionManagement>
 
     <scm>
-        <connection>scm:git:https://github.com/gkincses-yolk/ReleaseFromGit.git</connection>
-        <developerConnection>scm:git:ssh://git@github.com:gkincses-yolk/ReleaseFromGit.git</developerConnection>
+        <connection>scm:git:foo</connection>
+        <developerConnection>scm:git:bar</developerConnection>
         <tag>HEAD</tag>
     </scm>
 
