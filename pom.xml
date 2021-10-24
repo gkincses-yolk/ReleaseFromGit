@@ -5,7 +5,7 @@
     <groupId>digital.yolk</groupId>
     <artifactId>release-from-git</artifactId>
     <packaging>pom</packaging>
-    <version>1.3</version>
+    <version>1.4-SNAPSHOT</version>
 
     <modules>
         <module>lib1</module>
@@ -50,7 +50,7 @@
     <scm>
         <connection>scm:git:https://github.com/gkincses-yolk/ReleaseFromGit.git</connection>
         <developerConnection>scm:git:ssh://git@github.com:gkincses-yolk/ReleaseFromGit.git</developerConnection>
-        <tag>release-from-git-1.3</tag>
+        <tag>HEAD</tag>
     </scm>
 
     <build>
