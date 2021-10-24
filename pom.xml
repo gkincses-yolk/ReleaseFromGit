@@ -76,7 +76,6 @@
                     </dependency>
                 </dependencies>
                 <configuration>
-                    <branchName>develop</branchName>
                     <pushChanges>false</pushChanges>
                     <localCheckout>true</localCheckout>
                 </configuration>
